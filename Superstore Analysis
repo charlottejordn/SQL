@@ -1,0 +1,16 @@
+In this query, I am asking to show all items ordered by price, from largest to smallest
+SELECT *
+FROM superstore
+ORDER BY price DESC ;
+
+In this query, I am asking for a total price of goods in the database
+SELECT SUM (price)
+FROM superstore ;
+
+In this query, I am asking for a stock count for just Kitchen Supplies
+SELECT SUM (stock_quantity), 'Kitchen Supplies'
+FROM superstore ;
+
+In this query, I am asking for an average rating on goods in the Electronics category
+SELECT AVG (average_rating), 'Electronics'
+FROM superstore
